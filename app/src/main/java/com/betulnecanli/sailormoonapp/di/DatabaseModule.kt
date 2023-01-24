@@ -2,6 +2,7 @@ package com.betulnecanli.sailormoonapp.di
 
 import android.content.Context
 import androidx.room.Room
+import androidx.room.RoomDatabase
 import com.betulnecanli.sailormoonapp.data.local.SailorMoonDB
 import dagger.Module
 import dagger.Provides
@@ -17,11 +18,13 @@ object DatabaseModule {
 
     @Singleton
     @Provides
-    fun provideDatabase(@ApplicationContext context : Context) = Room.databaseBuilder(
-        context,
-        SailorMoonDB::class.java,
-        "sailormoonDB"
-    ).build()
+    fun provideDatabase(@ApplicationContext context : Context) : RoomDatabase{
+        return Room.databaseBuilder(
+            context,
+            SailorMoonDB::class.java,
+            "sailormoonDB"
+        ).build()
+    }
 
 
     @Singleton
