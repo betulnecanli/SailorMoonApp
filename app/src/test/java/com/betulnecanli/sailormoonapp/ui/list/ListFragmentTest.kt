@@ -18,6 +18,8 @@ import org.mockito.kotlin.whenever
 import com.betulnecanli.sailormoonapp.ui.list.ListAdapter
 import com.betulnecanli.sailormoonapp.ui.list.ListFragment
 import com.betulnecanli.sailormoonapp.ui.list.ListViewModel
+import org.mockito.kotlin.verify
+import java.util.regex.Pattern.matches
 
 class ListFragmentTest {
 
@@ -70,7 +72,13 @@ class ListFragmentTest {
     @Test
     fun navigateToDetailScreen() {
         // Arrange
-        val character = SailorMoon(/* ... */)
+        val character = SailorMoon(id = 1,
+            name ="Sailor Moon" ,
+            image = "/images/moon.jpg",
+            realName = "Usagi Tsukino",
+            birthday = "June 30th",
+            age = 16,
+            species = "Human")
         val characterFlow = MutableStateFlow(listOf(character))
         whenever(mockViewModel.characters).thenReturn(characterFlow)
 
