@@ -15,4 +15,6 @@ This is an Android app built with Android Libraries like Retrofit, Room, Coil et
 - Coil
 - Dagger Hilt
 - Coroutines
-
+- Mockito 
+- Mockk
+- Espresso 
