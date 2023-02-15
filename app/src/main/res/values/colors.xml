@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="reddish">#e56155</color>
+    <color name="reddish">#E8F47F74</color>
+    <color name="bg">#E8F5E2E1</color>
     <color name="orange">#FA884B</color>
     <color name="pink">#FB66B3</color>
     <color name="purple">#9D70EF</color>

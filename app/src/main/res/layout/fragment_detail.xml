@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/bg"
     tools:context=".ui.detail.DetailFragment">
 
     <com.google.android.material.textview.MaterialTextView
@@ -50,7 +51,7 @@
         android:layout_height="wrap_content"
         android:text="Species: "
         android:fontFamily="@font/asapcondensed"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="5dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/charRealName" />
@@ -61,7 +62,7 @@
         android:layout_height="wrap_content"
         android:text="Gender: "
         android:fontFamily="@font/asapcondensed"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="5dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/charAge" />
@@ -72,7 +73,7 @@
         android:layout_height="wrap_content"
         android:text="Gender: "
         android:fontFamily="@font/asapcondensed"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="5dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/charBirthday" />

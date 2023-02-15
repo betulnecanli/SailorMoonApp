@@ -17,7 +17,9 @@ class ListViewModel @Inject constructor(
 ) : ViewModel(){
 
     val characters = repository.getAllCharacters().asLiveData()
+
     private val taskEventChannel = Channel<TaskEvent>()
+
     val taskEvent = taskEventChannel.receiveAsFlow()
 
 
