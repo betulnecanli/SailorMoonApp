@@ -18,5 +18,9 @@
         android:id="@+id/detailFragment"
         android:name="com.betulnecanli.sailormoonapp.ui.detail.DetailFragment"
         android:label="fragment_detail"
-        tools:layout="@layout/fragment_detail" />
+        tools:layout="@layout/fragment_detail" >
+        <argument
+            android:name="character"
+            app:argType="com.betulnecanli.sailormoonapp.data.remote.model.SailorMoon" />
+    </fragment>
 </navigation>

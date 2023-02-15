@@ -18,7 +18,7 @@ object DatabaseModule {
 
     @Singleton
     @Provides
-    fun provideDatabase(@ApplicationContext context : Context) : RoomDatabase{
+    fun provideDatabase(@ApplicationContext context : Context) : SailorMoonDB{
         return Room.databaseBuilder(
             context,
             SailorMoonDB::class.java,

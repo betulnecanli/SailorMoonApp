@@ -1,12 +1,20 @@
 package com.betulnecanli.sailormoonapp.data.remote.model
 
+
+import androidx.room.Entity
+import com.google.gson.annotations.SerializedName
 import kotlinx.serialization.Serializable
 
-@Serializable
+
 data class ApiResponse(
-    val success : Boolean,
-    val message : String? = null,
-    val prevPage: Int? = null,
-    val nextPage: Int? = null,
-    val characters: List<Characters> = emptyList()
+    @SerializedName("message")
+    val message: String,
+    @SerializedName("nextPage")
+    val nextPage: Int,
+    @SerializedName("prevPage")
+    val prevPage: Int,
+    @SerializedName("sailorMoon")
+    val sailorMoon: List<SailorMoon>,
+    @SerializedName("success")
+    val success: Boolean
 )

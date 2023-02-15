@@ -4,7 +4,7 @@ import androidx.room.Dao
 import androidx.room.Insert
 import androidx.room.OnConflictStrategy
 import androidx.room.Query
-import com.betulnecanli.sailormoonapp.data.local.entity.RemoteKeysEntity
+import com.betulnecanli.sailormoonapp.data.local.entities.RemoteKeysEntity
 
 @Dao
 interface RemoteKeysDAO {
@@ -13,7 +13,7 @@ interface RemoteKeysDAO {
     suspend fun getRemoteKey(id : Int): RemoteKeysEntity?
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
-    suspend fun addAllRemoteKeys(remoteKeysEntity: List<RemoteKeysEntity>)
+    suspend fun addAllRemoteKeys(remoteKey: List<RemoteKeysEntity>)
 
     @Query("DELETE FROM remoteKeys")
     suspend fun deleteAllRemoteKeys()
