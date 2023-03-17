@@ -3,6 +3,7 @@ package com.betulnecanli.sailormoonapp.ui.list
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.asLiveData
 import androidx.lifecycle.viewModelScope
+import androidx.paging.cachedIn
 import com.betulnecanli.sailormoonapp.data.remote.model.SailorMoon
 import com.betulnecanli.sailormoonapp.repository.Repository
 import dagger.hilt.android.lifecycle.HiltViewModel
@@ -16,7 +17,7 @@ class ListViewModel @Inject constructor(
     private val repository: Repository
 ) : ViewModel(){
 
-    val characters = repository.getAllCharacters().asLiveData()
+    val characters = repository.getAllCharacters().cachedIn(viewModelScope).asLiveData()
 
     private val taskEventChannel = Channel<TaskEvent>()
 
