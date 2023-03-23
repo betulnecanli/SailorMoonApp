@@ -14,6 +14,13 @@
 ------------- | ------------- | -------------
 ![](https://github.com/betulnecanli/SailorMoonApp/blob/master/Screenshots/s0.PNG?raw=true)  | ![](https://github.com/betulnecanli/SailorMoonApp/blob/master/Screenshots/s1.PNG?raw=true)  | ![](https://github.com/betulnecanli/SailorMoonApp/blob/master/Screenshots/s2.PNG?raw=true)
 
+<h2 align="center">Features⭐</h2>
+
+- Display a list of Sailor Moon characters with their names and images.
+- View detailed information about each Sailor Moon character.
+
+
+
 <h2 align="center">Architecture ☁</h2>
 
 This app follows the MVVM (Model-View-ViewModel) architecture pattern. The components of the app are organized as follows:
