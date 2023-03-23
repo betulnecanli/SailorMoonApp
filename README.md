@@ -1,6 +1,12 @@
 #  <h1 align="center">🌙 Sailor Moon App</h1>
 
-<p align="center">  This is an Android app built with Android Libraries like Retrofit, Room, Coil etc. It uses Paging 3 library to fetch the data from our own REST API server developed with Ktor framework.</p>
+<p align="center">  This is an Android app built with Android Libraries like Retrofit, Room, Coil etc. It uses Paging 3 library to fetch the data from our own REST API server developed with Ktor framework.</p><br>
+
+
+**👉 Here is the [Sailor Moon Server GitHub Repo](https://github.com/betulnecanli/SailorMoonServer).**
+
+
+
 
 #  <h2 align="center">🖼 Preview</h2>
 ###  
