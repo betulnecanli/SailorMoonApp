@@ -25,9 +25,9 @@
 
 This app follows the MVVM (Model-View-ViewModel) architecture pattern. The components of the app are organized as follows:
 
-- Model: The data source for the app is the PokeAPI, which provides information about Pokemon characters in JSON format. The app uses Retrofit to make network requests to the PokeAPI and Gson to deserialize the JSON responses into Java objects.
+- Model: The data source for the app is the PokeAPI, which provides information about Sailor Moon characters in JSON format. The app uses Retrofit to make network requests to the SailorMoonAPI and Gson to deserialize the JSON responses into Java objects.
 
-- View: The views in the app are implemented using Android's XML layout files. The main activity (MainActivity) contains a RecyclerView that displays a list of Pokemon characters, and a search bar that allows users to filter the list by name. Clicking on a character in the list navigates the user to the CharacterDetailActivity, which displays detailed information about the selected character.
+- View: The views in the app are implemented using Android's XML layout files. The main activity (MainActivity) contains a RecyclerView that displays a list of Sailor Moon characters, and a search bar that allows users to filter the list by name. Clicking on a character in the list navigates the user to the CharacterDetailFragment, which displays detailed information about the selected character.
 
 - ViewModel: The CharacterViewModel class acts as an intermediary between the model and the view. It retrieves data from the model and exposes it to the view through observable data fields. It also provides methods for filtering the character list based on user input.
 
